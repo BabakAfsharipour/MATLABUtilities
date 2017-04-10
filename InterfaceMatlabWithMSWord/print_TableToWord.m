@@ -16,9 +16,12 @@ function print_TableToWord(selection,tbl)
                 continue;
             end
         end
-        
-        rowName = tbl.Properties.RowNames{r};
-        WordText(selection,rowName,'Normal',[0,0]);
+        if ~isempty(tbl.Properties.RowNames)
+            rowName = tbl.Properties.RowNames{r};
+            WordText(selection,rowName,'Normal',[0,0]);
+        elseif isempty(tbl.Properties.RowNames) && r==1
+           selection.MoveRight; 
+        end
         selection.MoveRight;
         
         for c=1:nr_cols_p
