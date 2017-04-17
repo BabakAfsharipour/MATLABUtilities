@@ -1,4 +1,5 @@
 function ColorSet=varycolor(NumberOfPlots)
+% ADDED TEXT
 % VARYCOLOR Produces colors with maximum variation on plots with multiple
 % lines.
 %
