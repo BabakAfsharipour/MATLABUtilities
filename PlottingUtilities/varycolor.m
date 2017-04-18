@@ -1,5 +1,5 @@
 function ColorSet=varycolor(NumberOfPlots)
-% ADDED TEXT
+% This is Babak
 % VARYCOLOR Produces colors with maximum variation on plots with multiple
 % lines.
 %
